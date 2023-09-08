@@ -5,7 +5,7 @@ import (
 	"net/http"
 
 	"github.com/gin-gonic/gin"
-	"github.com/weedbox/service-boilerplate/pkg/http_server"
+	"github.com/weedbox/common-modules/http_server"
 	"go.uber.org/fx"
 	"go.uber.org/zap"
 )

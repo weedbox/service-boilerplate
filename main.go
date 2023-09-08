@@ -4,12 +4,12 @@ import (
 	"os"
 
 	"github.com/spf13/cobra"
+	"github.com/weedbox/common-modules/configs"
+	"github.com/weedbox/common-modules/daemon"
+	"github.com/weedbox/common-modules/http_server"
+	"github.com/weedbox/common-modules/logger"
+	"github.com/weedbox/common-modules/nats_connector"
 	"github.com/weedbox/service-boilerplate/pkg/apis"
-	"github.com/weedbox/service-boilerplate/pkg/configs"
-	"github.com/weedbox/service-boilerplate/pkg/daemon"
-	"github.com/weedbox/service-boilerplate/pkg/http_server"
-	"github.com/weedbox/service-boilerplate/pkg/logger"
-	"github.com/weedbox/service-boilerplate/pkg/nats_connector"
 
 	"go.uber.org/fx"
 )
