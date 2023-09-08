@@ -56,11 +56,9 @@ func run() error {
 
 	app := fx.New(
 		fx.Supply(config),
-		fx.Provide(
-			logger.SetupLogger,
-		),
 
 		// Modules
+		logger.Module(),
 		nats_connector.Module("internal_event"),
 		http_server.Module("web_service"),
 		apis.Module("customized_apis"),

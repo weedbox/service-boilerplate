@@ -4,11 +4,22 @@ import (
 	"fmt"
 	"os"
 
+	"go.uber.org/fx"
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"
 )
 
 var logger *zap.Logger
+
+type Params struct {
+	fx.In
+}
+
+func Module() fx.Option {
+	return fx.Options(
+		fx.Provide(SetupLogger),
+	)
+}
 
 func NewCustomEncoderConfig() zapcore.EncoderConfig {
 	return zapcore.EncoderConfig{
