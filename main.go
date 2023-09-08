@@ -9,7 +9,9 @@ import (
 	"github.com/weedbox/common-modules/http_server"
 	"github.com/weedbox/common-modules/logger"
 	"github.com/weedbox/common-modules/nats_connector"
+	"github.com/weedbox/common-modules/postgres_connector"
 	"github.com/weedbox/service-boilerplate/pkg/apis"
+	"github.com/weedbox/service-boilerplate/pkg/apis_db"
 
 	"go.uber.org/fx"
 )
@@ -60,8 +62,10 @@ func run() error {
 		// Modules
 		logger.Module(),
 		nats_connector.Module("internal_event"),
+		postgres_connector.Module("database"),
 		http_server.Module("web_service"),
 		apis.Module("customized_apis"),
+		apis_db.Module("customized_apis_db"),
 		daemon.Module("daemon"),
 		fx.NopLogger,
 	)
