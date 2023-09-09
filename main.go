@@ -6,6 +6,7 @@ import (
 	"github.com/spf13/cobra"
 	"github.com/weedbox/common-modules/configs"
 	"github.com/weedbox/common-modules/daemon"
+	"github.com/weedbox/common-modules/healthcheck_apis"
 	"github.com/weedbox/common-modules/http_server"
 	"github.com/weedbox/common-modules/logger"
 	"github.com/weedbox/common-modules/nats_connector"
@@ -64,8 +65,13 @@ func run() error {
 		nats_connector.Module("internal_event"),
 		postgres_connector.Module("database"),
 		http_server.Module("web_service"),
+		healthcheck_apis.Module("healthcheck_apis"),
+
+		// Customization
 		apis.Module("customized_apis"),
 		apis_db.Module("customized_apis_db"),
+
+		// Integration
 		daemon.Module("daemon"),
 		fx.NopLogger,
 	)
