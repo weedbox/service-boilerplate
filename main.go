@@ -67,7 +67,7 @@ func run() error {
 		apis.Module("customized_apis"),
 		apis_db.Module("customized_apis_db"),
 		daemon.Module("daemon"),
-		//fx.NopLogger,
+		fx.NopLogger,
 	)
 
 	app.Run()
