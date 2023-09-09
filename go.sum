@@ -243,8 +243,8 @@ github.com/twitchyliquid64/golang-asm v0.15.1 h1:SU5vSMR7hnwNxj24w34ZyCi/FmDZTkS
 github.com/twitchyliquid64/golang-asm v0.15.1/go.mod h1:a1lVb/DtPvCB8fslRZhAngC2+aY1QWCk3Cedj/Gdt08=
 github.com/ugorji/go/codec v1.2.11 h1:BMaWp1Bb6fHwEtbplGBGJ498wD+LKlNSl25MjdZY4dU=
 github.com/ugorji/go/codec v1.2.11/go.mod h1:UNopzCgEMSXjBc6AOMqYvWC1ktqTAfzJZUZgYf6w6lg=
-github.com/weedbox/common-modules v0.0.0-20230908220948-27e99b2fb338 h1:hX1DaSL0O1DzhgcMXEL3I9wgkGkm5CxWF+f0SK7GmxU=
-github.com/weedbox/common-modules v0.0.0-20230908220948-27e99b2fb338/go.mod h1:M2UMmNlpVwEdCxZMrkCFcNhP0FOOhIc1pCJyzlQcyZw=
+github.com/weedbox/common-modules v0.0.0-20230909065502-08780942aa17 h1:Hh8s0A8ck+3UNmoDsmfZWWK9uXwqh0T6yNUeWsDoUL0=
+github.com/weedbox/common-modules v0.0.0-20230909065502-08780942aa17/go.mod h1:M2UMmNlpVwEdCxZMrkCFcNhP0FOOhIc1pCJyzlQcyZw=
 github.com/yuin/goldmark v1.1.25/go.mod h1:3hX8gzYuyVAZsxl0MRgGTJEmQBFcNTphYh9decYSb74=
 github.com/yuin/goldmark v1.1.27/go.mod h1:3hX8gzYuyVAZsxl0MRgGTJEmQBFcNTphYh9decYSb74=
 github.com/yuin/goldmark v1.1.32/go.mod h1:3hX8gzYuyVAZsxl0MRgGTJEmQBFcNTphYh9decYSb74=

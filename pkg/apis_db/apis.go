@@ -5,8 +5,8 @@ import (
 	"net/http"
 
 	"github.com/gin-gonic/gin"
+	"github.com/weedbox/common-modules/database"
 	"github.com/weedbox/common-modules/http_server"
-	"github.com/weedbox/common-modules/postgres_connector"
 	"go.uber.org/fx"
 	"go.uber.org/zap"
 )
@@ -24,7 +24,7 @@ type Params struct {
 	Lifecycle  fx.Lifecycle
 	Logger     *zap.Logger
 	HTTPServer *http_server.HTTPServer
-	Database   *postgres_connector.PostgresConnector
+	Database   database.DatabaseConnector
 }
 
 func Module(scope string) fx.Option {

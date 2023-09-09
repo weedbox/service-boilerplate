@@ -5,7 +5,7 @@ go 1.19
 require (
 	github.com/gin-gonic/gin v1.9.1
 	github.com/spf13/cobra v1.7.0
-	github.com/weedbox/common-modules v0.0.0-20230908220948-27e99b2fb338
+	github.com/weedbox/common-modules v0.0.0-20230909065502-08780942aa17
 	go.uber.org/fx v1.20.0
 	go.uber.org/zap v1.25.0
 )
@@ -63,3 +63,5 @@ require (
 	gorm.io/driver/postgres v1.5.2 // indirect
 	gorm.io/gorm v1.25.4 // indirect
 )
+
+//replace github.com/weedbox/common-modules => ../common-modules
