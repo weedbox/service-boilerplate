@@ -5,7 +5,7 @@ go 1.19
 require (
 	github.com/gin-gonic/gin v1.9.1
 	github.com/spf13/cobra v1.7.0
-	github.com/weedbox/common-modules v0.0.1
+	github.com/weedbox/common-modules v0.0.2
 	go.uber.org/fx v1.20.0
 	go.uber.org/zap v1.25.0
 )
