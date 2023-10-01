@@ -13,6 +13,8 @@ import (
 	"github.com/weedbox/common-modules/postgres_connector"
 	"github.com/weedbox/service-boilerplate/pkg/apis"
 	"github.com/weedbox/service-boilerplate/pkg/apis_db"
+	"github.com/weedbox/service-boilerplate/pkg/example_rpc"
+	"github.com/weedbox/websocket-modules/websocket_server"
 
 	"go.uber.org/fx"
 )
@@ -66,6 +68,9 @@ func run() error {
 		postgres_connector.Module("database"),
 		http_server.Module("web_service"),
 		healthcheck_apis.Module("healthcheck_apis"),
+
+		websocket_server.Module("websocket_server"),
+		example_rpc.Module("example_rpc"),
 
 		// Customization
 		apis.Module("customized_apis"),
