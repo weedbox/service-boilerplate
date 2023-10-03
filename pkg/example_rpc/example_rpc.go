@@ -2,10 +2,10 @@ package example_rpc
 
 import (
 	"context"
+	"errors"
 
 	"github.com/gin-gonic/gin"
 	"github.com/weedbox/common-modules/http_server"
-	"github.com/weedbox/websocket-modules/jsonrpc"
 	"github.com/weedbox/websocket-modules/websocket_server"
 	"go.uber.org/fx"
 	"go.uber.org/zap"
@@ -58,29 +58,21 @@ func Module(scope string) fx.Option {
 
 func (erpc *ExampleRPC) onStart(ctx context.Context) error {
 
-	erpc.logger.Info("Starting ExampleRPC")
+	erpc.logger.Info("Starting Example RPC")
 
-	// Initializing adapter for RPC
-	adapter := websocket_server.NewRPCAdapter(
-		websocket_server.WithRPCBackend(&jsonrpc.JSONRPC{}),
-	)
-
-	adapter.Register("Example.Hello", erpc.exampleHello)
-
-	// Create endpoint
-	opts := websocket_server.NewOptions()
-	opts.Adapter = adapter
-	_, err := erpc.params.WebSocketServer.CreateEndpoint("/example", opts)
-	if err != nil {
-		return err
+	ep := erpc.params.WebSocketServer.GetEndpoint("/example")
+	if ep == nil {
+		return errors.New("Not found endpoint")
 	}
+
+	ep.GetAdapter().Register("Example.Hello", erpc.exampleHello)
 
 	return nil
 }
 
 func (erpc *ExampleRPC) onStop(ctx context.Context) error {
 
-	erpc.logger.Info("Stopped ExampleRPC")
+	erpc.logger.Info("Stopped Example RPC")
 
 	return nil
 }

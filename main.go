@@ -14,6 +14,8 @@ import (
 	"github.com/weedbox/service-boilerplate/pkg/apis"
 	"github.com/weedbox/service-boilerplate/pkg/apis_db"
 	"github.com/weedbox/service-boilerplate/pkg/example_rpc"
+	"github.com/weedbox/websocket-modules/system_rpc"
+	"github.com/weedbox/websocket-modules/websocket_endpoint"
 	"github.com/weedbox/websocket-modules/websocket_server"
 
 	"go.uber.org/fx"
@@ -69,12 +71,15 @@ func run() error {
 		http_server.Module("web_service"),
 		healthcheck_apis.Module("healthcheck_apis"),
 
+		// Websocket
 		websocket_server.Module("websocket_server"),
-		example_rpc.Module("example_rpc"),
+		websocket_endpoint.Module("endpoint_example", "/example"),
+		system_rpc.Module("rpc_system", "/example"),
 
 		// Customization
 		apis.Module("customized_apis"),
 		apis_db.Module("customized_apis_db"),
+		example_rpc.Module("example_rpc"),
 
 		// Integration
 		daemon.Module("daemon"),

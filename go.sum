@@ -237,8 +237,8 @@ github.com/rogpeppe/go-internal v1.6.1/go.mod h1:xXDCJY+GAPziupqXw64V24skbSoqbTE
 github.com/rogpeppe/go-internal v1.8.0/go.mod h1:WmiCO8CzOY8rg0OYDC4/i/2WRWAB6poM+XZ2dLUbcbE=
 github.com/rogpeppe/go-internal v1.9.0 h1:73kH8U+JUqXU8lRuOHeVHaa/SZPifC7BkcraZVejAe8=
 github.com/russross/blackfriday/v2 v2.1.0/go.mod h1:+Rmxgy9KzJVeS9/2gXHxylqXiyQDYRxCVz55jmeOWTM=
-github.com/smallnest/epoller v1.0.0 h1:RrGI9n8LLbnqKochL4KFbTUjRd+8nlyamYBzF/2Dozk=
-github.com/smallnest/epoller v1.0.0/go.mod h1:4sHAHtCdMy9eEmvqjfsDdKXndwQa5TOX6/0fwPSV+Mg=
+github.com/smallnest/epoller v0.0.0-20220519132708-4cf8edae2daf h1:pMqatfMfZA4RTTpkOy5dQ0vl0aDIGVmzDaoBescoOoo=
+github.com/smallnest/epoller v0.0.0-20220519132708-4cf8edae2daf/go.mod h1:flvZx34pA0bmZwNnb/rTL8xze8yIebctQzsNk8VipTI=
 github.com/spf13/afero v1.9.5 h1:stMpOSZFs//0Lv29HduCmli3GUfpFoF3Y1Q/aXj/wVM=
 github.com/spf13/afero v1.9.5/go.mod h1:UBogFpq8E9Hx+xc5CNTTEpTnuHVmXDwZcZcE1eb/UhQ=
 github.com/spf13/cast v1.5.1 h1:R+kOtfhWQE6TVQzY+4D7wJLBgkdVasCEFxSUBYBYIlA=
@@ -264,9 +264,8 @@ github.com/stretchr/testify v1.7.1/go.mod h1:6Fq8oRcR53rry900zMqJjRRixrwX3KX962/
 github.com/stretchr/testify v1.8.0/go.mod h1:yNjHg4UonilssWZ8iaSj1OCr/vHnekPRkoO+kdMU+MU=
 github.com/stretchr/testify v1.8.1/go.mod h1:w2LPCIKwWwSfY2zedu0+kehJoqGctiVI29o6fzry7u4=
 github.com/stretchr/testify v1.8.2/go.mod h1:w2LPCIKwWwSfY2zedu0+kehJoqGctiVI29o6fzry7u4=
+github.com/stretchr/testify v1.8.3 h1:RP3t2pwF7cMEbC1dqtB6poj3niw/9gnV4Cjg5oW5gtY=
 github.com/stretchr/testify v1.8.3/go.mod h1:sz/lmYIOXD/1dqDmKjjqLyZ2RngseejIcXlSw2iwfAo=
-github.com/stretchr/testify v1.8.4 h1:CcVxjf3Q8PM0mHUKJCdn+eZZtm5yQwehR5yeSVQQcUk=
-github.com/stretchr/testify v1.8.4/go.mod h1:sz/lmYIOXD/1dqDmKjjqLyZ2RngseejIcXlSw2iwfAo=
 github.com/subosito/gotenv v1.4.2 h1:X1TuBLAMDFbaTAChgCBLu3DU3UPyELpnF2jjJ2cz/S8=
 github.com/subosito/gotenv v1.4.2/go.mod h1:ayKnFf/c6rvx/2iiLrJUk1e6plDbT3edrFNGqEflhK0=
 github.com/twitchyliquid64/golang-asm v0.15.1 h1:SU5vSMR7hnwNxj24w34ZyCi/FmDZTkS4MhqMhdFk5YI=
@@ -277,8 +276,8 @@ github.com/ugorji/go/codec v1.2.11 h1:BMaWp1Bb6fHwEtbplGBGJ498wD+LKlNSl25MjdZY4d
 github.com/ugorji/go/codec v1.2.11/go.mod h1:UNopzCgEMSXjBc6AOMqYvWC1ktqTAfzJZUZgYf6w6lg=
 github.com/weedbox/common-modules v0.0.4 h1:h50oLPdiRmRi8sNe/lPqHFURdfxdGxlh+g7jxGZhvCI=
 github.com/weedbox/common-modules v0.0.4/go.mod h1:mQOF1ep5GuTXtTV3W/IaoJ5K22K8ecNcM19WRnjVk/o=
-github.com/weedbox/websocket-modules v0.0.2 h1:XySTQh9ZsklDcPr771JYXa6KSLsh9cSHQMtwqknxzJw=
-github.com/weedbox/websocket-modules v0.0.2/go.mod h1:6UXe8sTWtCJbEJy5NGBUgO7yEGXDUSOcWFm3Sbna8s0=
+github.com/weedbox/websocket-modules v0.0.4 h1:LwX7YLR8FLFqpt2ZyQkKVTBHIrMLTm8H8cCMhTsTzuE=
+github.com/weedbox/websocket-modules v0.0.4/go.mod h1:1JWhRcSi2VUKEfoV1dn+R1xDMEF8WgUA8+iYJp0nI0E=
 github.com/yuin/goldmark v1.1.25/go.mod h1:3hX8gzYuyVAZsxl0MRgGTJEmQBFcNTphYh9decYSb74=
 github.com/yuin/goldmark v1.1.27/go.mod h1:3hX8gzYuyVAZsxl0MRgGTJEmQBFcNTphYh9decYSb74=
 github.com/yuin/goldmark v1.1.32/go.mod h1:3hX8gzYuyVAZsxl0MRgGTJEmQBFcNTphYh9decYSb74=
