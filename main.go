@@ -14,6 +14,7 @@ import (
 	"github.com/weedbox/service-boilerplate/pkg/apis"
 	"github.com/weedbox/service-boilerplate/pkg/apis_db"
 	"github.com/weedbox/service-boilerplate/pkg/example_rpc"
+	"github.com/weedbox/websocket-modules/auth_rpc"
 	"github.com/weedbox/websocket-modules/system_rpc"
 	"github.com/weedbox/websocket-modules/websocket_endpoint"
 	"github.com/weedbox/websocket-modules/websocket_server"
@@ -77,6 +78,9 @@ func run() error {
 		websocket_server.Module("websocket_server"),
 		websocket_endpoint.Module("endpoint_example", "/example"),
 		system_rpc.Module("rpc_system", "/example"),
+		auth_rpc.Module("rpc_auth", "/example",
+			auth_rpc.WithHTTPAuthenticator(),
+		),
 
 		// Customization
 		apis.Module("customized_apis"),

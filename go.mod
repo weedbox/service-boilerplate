@@ -6,7 +6,7 @@ require (
 	github.com/gin-gonic/gin v1.9.1
 	github.com/spf13/cobra v1.7.0
 	github.com/weedbox/common-modules v0.0.5
-	github.com/weedbox/websocket-modules v0.0.6
+	github.com/weedbox/websocket-modules v0.0.7
 	go.uber.org/fx v1.20.0
 	go.uber.org/zap v1.26.0
 )
@@ -25,6 +25,7 @@ require (
 	github.com/gobwas/pool v0.2.1 // indirect
 	github.com/gobwas/ws v1.3.0 // indirect
 	github.com/goccy/go-json v0.10.2 // indirect
+	github.com/golang-jwt/jwt v3.2.2+incompatible // indirect
 	github.com/google/uuid v1.3.1 // indirect
 	github.com/hashicorp/hcl v1.0.0 // indirect
 	github.com/inconshreveable/mousetrap v1.1.0 // indirect

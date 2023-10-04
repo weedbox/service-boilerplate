@@ -99,6 +99,8 @@ github.com/gobwas/ws v1.3.0/go.mod h1:hRKAFb8wOxFROYNsT1bqfWnhX+b5MFeJM9r2ZSwg/K
 github.com/goccy/go-json v0.9.7/go.mod h1:6MelG93GURQebXPDq3khkgXZkazVtN9CRI+MGFi0w8I=
 github.com/goccy/go-json v0.10.2 h1:CrxCmQqYDkv1z7lO7Wbh2HN93uovUHgrECaO5ZrCXAU=
 github.com/goccy/go-json v0.10.2/go.mod h1:6MelG93GURQebXPDq3khkgXZkazVtN9CRI+MGFi0w8I=
+github.com/golang-jwt/jwt v3.2.2+incompatible h1:IfV12K8xAKAnZqdXVzCZ+TOjboZ2keLg81eXfW3O+oY=
+github.com/golang-jwt/jwt v3.2.2+incompatible/go.mod h1:8pz2t5EyA70fFQQSrl6XZXzqecmYZeUEB8OUGHkxJ+I=
 github.com/golang/glog v0.0.0-20160126235308-23def4e6c14b/go.mod h1:SBH7ygxi8pfUlaOkMMuAQtPIUF8ecWP5IEl/CR7VP2Q=
 github.com/golang/groupcache v0.0.0-20190702054246-869f871628b6/go.mod h1:cIg4eruTrX1D+g88fzRXU5OdNfaM+9IcxsU14FzY7Hc=
 github.com/golang/groupcache v0.0.0-20191227052852-215e87163ea7/go.mod h1:cIg4eruTrX1D+g88fzRXU5OdNfaM+9IcxsU14FzY7Hc=
@@ -276,8 +278,8 @@ github.com/ugorji/go/codec v1.2.11 h1:BMaWp1Bb6fHwEtbplGBGJ498wD+LKlNSl25MjdZY4d
 github.com/ugorji/go/codec v1.2.11/go.mod h1:UNopzCgEMSXjBc6AOMqYvWC1ktqTAfzJZUZgYf6w6lg=
 github.com/weedbox/common-modules v0.0.5 h1:krfj+YzRyciZEHZO8yUKJ/aNZc3CjYpeaudFnG8jPGc=
 github.com/weedbox/common-modules v0.0.5/go.mod h1:mQOF1ep5GuTXtTV3W/IaoJ5K22K8ecNcM19WRnjVk/o=
-github.com/weedbox/websocket-modules v0.0.6 h1:EsCut4AdCaoJER3V5LMo5QkA+wL/2Q+cnJdCDCAJw1E=
-github.com/weedbox/websocket-modules v0.0.6/go.mod h1:aKE2Cc1IQNt+8BHLUel9461Aq3xd2SygAwAMeSrqc74=
+github.com/weedbox/websocket-modules v0.0.7 h1:XgQDr/0dps/eTA9kJrdca0VGC64Y1i7/1FtkHurKyY0=
+github.com/weedbox/websocket-modules v0.0.7/go.mod h1:fnVFn9tzLkc8lY2sjStBJq29JFAjRW2/WkQR7SJTbLw=
 github.com/yuin/goldmark v1.1.25/go.mod h1:3hX8gzYuyVAZsxl0MRgGTJEmQBFcNTphYh9decYSb74=
 github.com/yuin/goldmark v1.1.27/go.mod h1:3hX8gzYuyVAZsxl0MRgGTJEmQBFcNTphYh9decYSb74=
 github.com/yuin/goldmark v1.1.32/go.mod h1:3hX8gzYuyVAZsxl0MRgGTJEmQBFcNTphYh9decYSb74=
