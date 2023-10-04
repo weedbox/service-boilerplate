@@ -274,10 +274,10 @@ github.com/ugorji/go v1.2.7/go.mod h1:nF9osbDWLy6bDVv/Rtoh6QgnvNDpmCalQV5urGCCS6
 github.com/ugorji/go/codec v1.2.7/go.mod h1:WGN1fab3R1fzQlVQTkfxVtIBhWDRqOviHU95kRgeqEY=
 github.com/ugorji/go/codec v1.2.11 h1:BMaWp1Bb6fHwEtbplGBGJ498wD+LKlNSl25MjdZY4dU=
 github.com/ugorji/go/codec v1.2.11/go.mod h1:UNopzCgEMSXjBc6AOMqYvWC1ktqTAfzJZUZgYf6w6lg=
-github.com/weedbox/common-modules v0.0.4 h1:h50oLPdiRmRi8sNe/lPqHFURdfxdGxlh+g7jxGZhvCI=
-github.com/weedbox/common-modules v0.0.4/go.mod h1:mQOF1ep5GuTXtTV3W/IaoJ5K22K8ecNcM19WRnjVk/o=
-github.com/weedbox/websocket-modules v0.0.4 h1:LwX7YLR8FLFqpt2ZyQkKVTBHIrMLTm8H8cCMhTsTzuE=
-github.com/weedbox/websocket-modules v0.0.4/go.mod h1:1JWhRcSi2VUKEfoV1dn+R1xDMEF8WgUA8+iYJp0nI0E=
+github.com/weedbox/common-modules v0.0.5 h1:krfj+YzRyciZEHZO8yUKJ/aNZc3CjYpeaudFnG8jPGc=
+github.com/weedbox/common-modules v0.0.5/go.mod h1:mQOF1ep5GuTXtTV3W/IaoJ5K22K8ecNcM19WRnjVk/o=
+github.com/weedbox/websocket-modules v0.0.6 h1:EsCut4AdCaoJER3V5LMo5QkA+wL/2Q+cnJdCDCAJw1E=
+github.com/weedbox/websocket-modules v0.0.6/go.mod h1:aKE2Cc1IQNt+8BHLUel9461Aq3xd2SygAwAMeSrqc74=
 github.com/yuin/goldmark v1.1.25/go.mod h1:3hX8gzYuyVAZsxl0MRgGTJEmQBFcNTphYh9decYSb74=
 github.com/yuin/goldmark v1.1.27/go.mod h1:3hX8gzYuyVAZsxl0MRgGTJEmQBFcNTphYh9decYSb74=
 github.com/yuin/goldmark v1.1.32/go.mod h1:3hX8gzYuyVAZsxl0MRgGTJEmQBFcNTphYh9decYSb74=

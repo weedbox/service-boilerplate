@@ -24,6 +24,7 @@ import (
 var config *configs.Config
 var host string
 var port int
+var pc bool
 
 var rootCmd = &cobra.Command{
 	Use:   "service-boilerplate",
@@ -44,6 +45,7 @@ func init() {
 
 	rootCmd.Flags().StringVar(&host, "host", "0.0.0.0", "Specify host")
 	rootCmd.Flags().IntVar(&port, "port", 8080, "Specify service port")
+	rootCmd.Flags().BoolVar(&pc, "print_configs", false, "Show all configs")
 }
 
 func main() {
@@ -85,6 +87,10 @@ func run() error {
 		daemon.Module("daemon"),
 		fx.NopLogger,
 	)
+
+	if pc {
+		config.PrintAllSettings()
+	}
 
 	app.Run()
 
