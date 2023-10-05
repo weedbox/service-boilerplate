@@ -78,9 +78,7 @@ func run() error {
 		websocket_server.Module("websocket_server"),
 		websocket_endpoint.Module("endpoint_example", "/example"),
 		system_rpc.Module("rpc_system", "/example"),
-		auth_rpc.Module("rpc_auth", "/example",
-			auth_rpc.WithHTTPAuthenticator(),
-		),
+		auth_rpc.Module("rpc_auth", "/example"),
 
 		// Customization
 		apis.Module("customized_apis"),
