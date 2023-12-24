@@ -22,15 +22,14 @@ FROM alpine:latest
 WORKDIR /app/
 
 # 從建置階段的 image 複製 binary 到最終階段的 image 中
-COPY --from=builder /service.app /app/service.app
+COPY --from=builder /workspace/service.app /app/service.app
 
 # 開放你的應用程式使用的 port
 EXPOSE 5001
 
 # 設定權限跟預留 mountpoint
 RUN mkdir /datastore && \
-	chown -R 1001:0 /configs /datastore /app/service.app && \
-	chmod 777 /configs/config.toml  && \
+    chown -R 1001:0 /datastore /app/service.app && \
 	chmod -R g+rwX /datastore
 
 # 不存在的使用者
